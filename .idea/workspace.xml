@@ -5,51 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f515527-2ec2-4731-848c-639c3d81a22f" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/_media/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/_media/bugstack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/_media/fustack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/_media/h_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/_media/h_2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/_media/h_3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/_media/lottery.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/_media/xiaofuge.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/assets/excel/库表设计.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/assets/ppt/系统设计.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/assets/sql/lottery.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/assets/xmind/抽奖系统.xmind" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/assets/xmind/需求梳理.xmind" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/notes/第 1 节：xxx.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-application/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-application/src/main/java/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-common/src/main/java/com/ste1la/lottery/common/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-common/src/main/java/com/ste1la/lottery/common/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-infrastructure/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/dao/IActivityDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/po/Activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-interfaces/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/java/com/ste1la/lottery/LotteryApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/java/com/ste1la/lottery/interfaces/ActivityBooth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/mybatis/config/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/mybatis/mapper/Activity_Mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/test/ApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-rpc/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-rpc/src/main/java/com/ste1la/lottery/rpc/IActivityBooth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-rpc/src/main/java/com/ste1la/lottery/rpc/dto/ActivityDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-rpc/src/main/java/com/ste1la/lottery/rpc/req/ActivityReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-rpc/src/main/java/com/ste1la/lottery/rpc/res/ActivityRes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-interfaces/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/test/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/ApiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +30,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2s8xuVIoY0PvXyi05SvKXNU2yTt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -79,9 +45,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ApiTest.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.mylottery [clean].executor": "Run",
+    "Maven.mylottery [compile].executor": "Run",
+    "Maven.mylottery [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.LotteryApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Desktop/java学习/project/lottery/mylottery/mylottery-rpc/src/main/java/com/ste1la/lottery/rpc",
@@ -90,10 +65,15 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "SDK",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -104,6 +84,7 @@
       <recent name="D:\Desktop\java学习\project\lottery\mylottery" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ste1la.lottery" />
       <recent name="com.ste1la.lottery.interfaces" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -111,7 +92,22 @@
       <recent name="com.ste1la.lottery.interfaces" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.LotteryApplication">
+    <configuration name="ApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mylottery-interfaces" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ste1la.lottery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ste1la.lottery" />
+      <option name="MAIN_CLASS_NAME" value="com.ste1la.lottery.ApiTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LotteryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="mylottery-interfaces" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ste1la.lottery.LotteryApplication" />
@@ -119,6 +115,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ApiTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -137,6 +138,9 @@
       <option name="presentableId" value="Default" />
       <updated>1737851226326</updated>
       <workItem from="1737851227410" duration="1428000" />
+      <workItem from="1737853828649" duration="625000" />
+      <workItem from="1737854472423" duration="319000" />
+      <workItem from="1737856842352" duration="2977000" />
     </task>
     <servers />
   </component>
