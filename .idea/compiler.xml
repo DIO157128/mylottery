@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/mylottery-common/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/mylottery-application/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/mylottery-domain/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/mylottery-infrastructure/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/mylottery-interfaces/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/mylottery-rpc/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mylottery-common" />
+        <module name="mylottery-rpc" />
+        <module name="mylottery-application" />
+        <module name="mylottery-domain" />
+        <module name="mylottery-infrastructure" />
+        <module name="mylottery-interfaces" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mylottery" options="-parameters" />
+      <module name="mylottery-application" options="-parameters" />
+      <module name="mylottery-common" options="-parameters" />
+      <module name="mylottery-domain" options="-parameters" />
+      <module name="mylottery-infrastructure" options="-parameters" />
+      <module name="mylottery-interfaces" options="-parameters" />
+      <module name="mylottery-rpc" options="-parameters" />
+    </option>
+  </component>
+</project>
