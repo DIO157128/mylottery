@@ -13,11 +13,17 @@ import java.util.List;
  **/
 public class StrategyRich {
 
-    // 策略ID
+    /**
+     * 策略ID
+     */
     private Long strategyId;
-    // 策略配置
+    /**
+     * 策略配置
+     */
     private Strategy strategy;
-    // 策略明细
+    /**
+     * 策略明细
+     */
     private List<StrategyDetail> strategyDetailList;
 
     public StrategyRich() {

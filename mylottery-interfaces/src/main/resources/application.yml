@@ -5,7 +5,7 @@ spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://127.0.0.1:13306/lottery?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=America/Los_Angeles&useSSL=true
+    url: jdbc:mysql://127.0.0.1:13306/lottery?useUnicode=true&serverTimezone=America/Los_Angeles
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 mybatis:
@@ -17,6 +17,8 @@ dubbo:
   application:
     name: mylottery
     version: 1.0.0
+    parameters:
+      unicast: false
   registry:
     address: N/A #multicast://224.5.6.7:1234
   protocol:

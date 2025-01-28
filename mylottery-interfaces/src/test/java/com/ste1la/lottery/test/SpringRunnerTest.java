@@ -1,7 +1,14 @@
 package com.ste1la.lottery.test;
 
 import com.alibaba.fastjson.JSON;
+import com.ste1la.lottery.common.Constants;
+import com.ste1la.lottery.domain.award.model.req.GoodsReq;
+import com.ste1la.lottery.domain.award.model.res.DistributionRes;
+import com.ste1la.lottery.domain.award.service.factory.DistributionGoodsFactory;
+import com.ste1la.lottery.domain.award.service.goods.IDistributionGoods;
 import com.ste1la.lottery.domain.strategy.model.req.DrawReq;
+import com.ste1la.lottery.domain.strategy.model.res.DrawResult;
+import com.ste1la.lottery.domain.strategy.model.vo.DrawAwardInfo;
 import com.ste1la.lottery.domain.strategy.service.draw.IDrawExec;
 import com.ste1la.lottery.infrastructure.dao.IActivityDao;
 import com.ste1la.lottery.infrastructure.po.Activity;
@@ -32,6 +39,8 @@ public class SpringRunnerTest {
 
     @Resource
     private IDrawExec drawExec;
+    @Resource
+    private DistributionGoodsFactory distributionGoodsFactory;
 
     @Test
     public void test_drawExec() {
@@ -41,6 +50,28 @@ public class SpringRunnerTest {
         drawExec.doDrawExec(new DrawReq("八杯水", 10001L));
     }
 
+    @Test
+    public void test_award() {
+        // 执行抽奖
+        DrawResult drawResult = drawExec.doDrawExec(new DrawReq("小傅哥", 10001L));
+
+        // 判断抽奖结果
+        Integer drawState = drawResult.getDrawState();
+        if (Constants.DrawState.FAIL.getCode().equals(drawState)) {
+            logger.info("未中奖 DrawAwardInfo is null");
+            return;
+        }
+
+        // 封装发奖参数，orderId：2109313442431 为模拟ID，需要在用户参与领奖活动时生成
+        DrawAwardInfo drawAwardInfo = drawResult.getDrawAwardInfo();
+        GoodsReq goodsReq = new GoodsReq(drawResult.getuId(), "2109313442431", drawAwardInfo.getAwardId(), drawAwardInfo.getAwardName(), drawAwardInfo.getAwardContent());
+
+        // 根据 awardType 从抽奖工厂中获取对应的发奖服务
+        IDistributionGoods distributionGoodsService = distributionGoodsFactory.getDistributionGoodsService(drawAwardInfo.getAwardType());
+        DistributionRes distributionRes = distributionGoodsService.doDistribution(goodsReq);
+
+        logger.info("测试结果：{}", JSON.toJSONString(distributionRes));
+    }
     @Test
     public void test_insert() {
         Activity activity = new Activity();
