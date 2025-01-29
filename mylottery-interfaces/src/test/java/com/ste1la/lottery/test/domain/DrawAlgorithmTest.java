@@ -1,4 +1,4 @@
-package com.ste1la.lottery.test;
+package com.ste1la.lottery.test.domain;
 
 import com.ste1la.lottery.domain.strategy.model.vo.AwardRateInfo;
 import com.ste1la.lottery.domain.strategy.service.algorithm.IDrawAlgorithm;

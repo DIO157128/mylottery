@@ -7,42 +7,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f515527-2ec2-4731-848c-639c3d81a22f" name="更改" comment="modify template">
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/model/req/GoodsReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/model/res/DistributionRes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/model/vo/ShippingAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/repository/IAwardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/repository/impl/AwardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/factory/DistributionGoodsFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/factory/GoodsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/DistributionBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/IDistributionGoods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/impl/CouponGoods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/impl/DescGoods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/impl/PhysicalGoods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/impl/RedeemCodeGoods.java" afterDir="false" />
+    <list default="true" id="1f515527-2ec2-4731-848c-639c3d81a22f" name="更改" comment="add distribution factory">
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/aggregates/ActivityConfigRich.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/req/ActivityConfigReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/vo/ActivityVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/vo/AlterStateVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/vo/AwardVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/vo/StrategyDetailVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/vo/StrategyVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/repository/IActivityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/deploy/IActivityDeploy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/deploy/impl/ActivityDeployImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/partake/IActivityPartake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/stateflow/AbstractState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/stateflow/IStateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/stateflow/StateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/stateflow/event/ArraignmentState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/stateflow/event/CloseState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/stateflow/event/DoingState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/stateflow/event/EditingState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/stateflow/event/OpenState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/stateflow/event/PassState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/stateflow/event/RefuseState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/stateflow/impl/StateHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/model/vo/AwardBriefVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/model/vo/StrategyBriefVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/model/vo/StrategyDetailBriefVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/repository/ActivityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/domain/ActivityTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/assets/sql/lottery.sql" beforeDir="false" afterPath="$PROJECT_DIR$/doc/assets/sql/lottery.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-common/src/main/java/com/ste1la/lottery/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-common/src/main/java/com/ste1la/lottery/common/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-common/src/main/java/com/ste1la/lottery/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-common/src/main/java/com/ste1la/lottery/common/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/repository/impl/AwardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/repository/AwardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/IDistributionGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/IDistributionGoods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/impl/CouponGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/impl/CouponGoods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/impl/DescGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/impl/DescGoods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/impl/PhysicalGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/impl/PhysicalGoods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/impl/RedeemCodeGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/service/goods/impl/RedeemCodeGoods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/model/aggregates/StrategyRich.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/model/aggregates/StrategyRich.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/model/req/DrawReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/model/req/DrawReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/model/vo/AwardRateInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/model/vo/AwardRateInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/model/vo/DrawAwardInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/model/vo/DrawAwardInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/repository/IStrategyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/repository/IStrategyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/repository/impl/StrategyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/repository/StrategyRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/service/draw/AbstractDrawBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/service/draw/AbstractDrawBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/service/draw/DrawStrategySupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/service/draw/DrawStrategySupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/dao/IActivityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/dao/IActivityDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/dao/IAwardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/dao/IAwardDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/dao/IStrategyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/dao/IStrategyDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/po/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/po/Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/dao/IStrategyDetailDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/dao/IStrategyDetailDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/po/Award.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/po/Award.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/po/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/po/Strategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/po/StrategyDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/po/StrategyDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/mybatis/mapper/Activity_Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/mybatis/mapper/Activity_Mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/mybatis/mapper/Award_Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/mybatis/mapper/Award_Mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/mybatis/mapper/StrategyDetail_Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/mybatis/mapper/StrategyDetail_Mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/mybatis/mapper/Strategy_Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/mybatis/mapper/Strategy_Mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/DrawAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/DrawAlgorithmTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/SpringRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/SpringRunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/ApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/DrawAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/domain/DrawAlgorithmTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +115,7 @@
     "Spring Boot.LotteryApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Desktop/java学习/project/lottery/mylottery/mylottery-domain/src/main/java/com/ste1la/lottery/domain/award/model",
+    "last_opened_file_path": "D:/Desktop/java学习/project/lottery/mylottery/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,11 +141,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-domain\src\main\java\com\ste1la\lottery\domain\activity" />
       <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-domain\src\main\java\com\ste1la\lottery\domain\award\model" />
       <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-interfaces\src\main\resources\mybatis\mapper" />
       <recent name="D:\Desktop\java学习\project\lottery\mylottery\doc\assets\sql" />
       <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-rpc\src\main\java\com\ste1la\lottery\rpc" />
-      <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-interfaces\src\test\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-domain\src\main\java\com\ste1la\lottery\domain\award\service\" />
@@ -144,18 +163,33 @@
       <recent name="com.ste1la.lottery.interfaces" />
     </key>
   </component>
-  <component name="RunManager" selected="数据库脚本.lottery.sql">
+  <component name="RunManager" selected="JUnit.ActivityTest">
     <configuration name="lottery.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/doc/assets/sql/lottery.sql" />
       <script-mode>FILE</script-mode>
       <data-source id="104211f5-d920-4476-89d3-fec9f8d8a9b7" namespace="schema/&quot;lottery&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="ActivityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mylottery-interfaces" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ste1la.lottery.test.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ste1la.lottery.test.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.ste1la.lottery.test.domain.ActivityTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringRunnerTest.test_award" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mylottery-interfaces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ste1la.lottery.test.*" />
+          <option name="PATTERN" value="com.ste1la.lottery.test.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -167,27 +201,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringRunnerTest.test_drawExec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mylottery-interfaces" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ste1la.lottery.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ste1la.lottery.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ste1la.lottery.test.SpringRunnerTest" />
-      <option name="METHOD_NAME" value="test_drawExec" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SpringRunnerTest.test_insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mylottery-interfaces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ste1la.lottery.test.*" />
+          <option name="PATTERN" value="com.ste1la.lottery.test.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -203,7 +221,7 @@
       <module name="mylottery-interfaces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ste1la.lottery.test.*" />
+          <option name="PATTERN" value="com.ste1la.lottery.test.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -224,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ActivityTest" />
         <item itemvalue="数据库脚本.lottery.sql" />
         <item itemvalue="JUnit.SpringRunnerTest.test_select" />
         <item itemvalue="JUnit.SpringRunnerTest.test_insert" />
         <item itemvalue="JUnit.SpringRunnerTest.test_award" />
-        <item itemvalue="JUnit.SpringRunnerTest.test_drawExec" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +273,8 @@
       <workItem from="1737931512223" duration="6629000" />
       <workItem from="1738014036042" duration="224000" />
       <workItem from="1738014267988" duration="4769000" />
-      <workItem from="1738019110959" duration="4486000" />
+      <workItem from="1738019110959" duration="4675000" />
+      <workItem from="1738105660623" duration="4682000" />
     </task>
     <task id="LOCAL-00001" summary="fix database connection">
       <option name="closed" value="true" />
@@ -281,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738018151078</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add distribution factory">
+      <option name="closed" value="true" />
+      <created>1738023833660</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738023833660</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,13 +318,14 @@
     <MESSAGE value="fix database connection" />
     <MESSAGE value="add sql files" />
     <MESSAGE value="modify template" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify template" />
+    <MESSAGE value="add distribution factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="add distribution factory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/DrawAlgorithmTest.java</url>
+          <url>file://$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/domain/DrawAlgorithmTest.java</url>
           <line>51</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>

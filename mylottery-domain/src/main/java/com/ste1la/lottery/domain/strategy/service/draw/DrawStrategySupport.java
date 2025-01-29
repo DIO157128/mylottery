@@ -1,8 +1,8 @@
 package com.ste1la.lottery.domain.strategy.service.draw;
 
 import com.ste1la.lottery.domain.strategy.model.aggregates.StrategyRich;
+import com.ste1la.lottery.domain.strategy.model.vo.AwardBriefVO;
 import com.ste1la.lottery.domain.strategy.repository.IStrategyRepository;
-import com.ste1la.lottery.infrastructure.po.Award;
 
 import javax.annotation.Resource;
 
@@ -33,7 +33,7 @@ public class DrawStrategySupport extends DrawConfig{
      * @param awardId 奖品ID
      * @return 中奖详情
      */
-    protected Award queryAwardInfoByAwardId(String awardId){
+    protected AwardBriefVO queryAwardInfoByAwardId(String awardId){
         return strategyRepository.queryAwardInfo(awardId);
     }
 
