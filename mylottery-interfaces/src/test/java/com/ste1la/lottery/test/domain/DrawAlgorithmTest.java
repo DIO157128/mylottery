@@ -1,10 +1,18 @@
 package com.ste1la.lottery.test.domain;
 
+import com.alibaba.fastjson.JSON;
+import com.ste1la.lottery.common.Constants;
+import com.ste1la.lottery.domain.strategy.model.req.DrawReq;
+import com.ste1la.lottery.domain.strategy.model.res.DrawResult;
 import com.ste1la.lottery.domain.strategy.model.vo.AwardRateInfo;
 import com.ste1la.lottery.domain.strategy.service.algorithm.IDrawAlgorithm;
+import com.ste1la.lottery.domain.strategy.service.draw.IDrawExec;
+import com.ste1la.lottery.test.SpringRunnerTest;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -23,9 +31,14 @@ import java.util.List;
 @SpringBootTest
 public class DrawAlgorithmTest {
 
+    private Logger logger = LoggerFactory.getLogger(SpringRunnerTest.class);
+
     @Resource(name = "entiretyRateRandomDrawAlgorithm")
 //    @Resource(name = "singleRateRandomDrawAlgorithm")
     private IDrawAlgorithm randomDrawAlgorithm;
+
+    @Resource(name = "drawExec")
+    private IDrawExec iDrawExec;
 
     @Before
     public void init() {
@@ -38,7 +51,7 @@ public class DrawAlgorithmTest {
         strategyList.add(new AwardRateInfo("五等奖：充电宝", new BigDecimal("0.35")));
 
         // 初始数据
-        randomDrawAlgorithm.initRateTuple(100001L, strategyList);
+        randomDrawAlgorithm.initRateTuple(100001L, Constants.StrategyMode.SINGLE.getCode(), strategyList);
     }
 
     @Test
@@ -52,6 +65,12 @@ public class DrawAlgorithmTest {
             System.out.println("中奖结果：" + randomDrawAlgorithm.randomDraw(100001L, excludeAwardIds));
         }
 
+    }
+
+    @Test
+    public void test_iDrawExec() {
+        DrawResult drawResult = iDrawExec.doDrawExec(new DrawReq("小傅哥", 10001L));
+        logger.info("测试结果：{}", JSON.toJSONString(drawResult));
     }
 
 }

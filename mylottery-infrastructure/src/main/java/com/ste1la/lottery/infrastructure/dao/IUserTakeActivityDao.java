@@ -18,7 +18,6 @@ public interface IUserTakeActivityDao {
      *
      * @param userTakeActivity 入参
      */
-    @DBRouter(key = "uId")
     void insert(UserTakeActivity userTakeActivity);
 
 }

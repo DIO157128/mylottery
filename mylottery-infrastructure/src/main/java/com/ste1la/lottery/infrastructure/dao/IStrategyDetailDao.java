@@ -32,7 +32,7 @@ public interface IStrategyDetailDao {
     /**
      * 插入策略配置组
      *
-     * @param
+     * @param list
      */
     void insertList(List<StrategyDetail> list);
 

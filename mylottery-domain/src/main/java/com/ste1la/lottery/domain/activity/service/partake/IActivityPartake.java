@@ -1,5 +1,8 @@
 package com.ste1la.lottery.domain.activity.service.partake;
 
+import com.ste1la.lottery.domain.activity.model.req.PartakeReq;
+import com.ste1la.lottery.domain.activity.model.res.PartakeResult;
+
 /**
  * @program: mylottery
  * @description:
@@ -9,8 +12,10 @@ package com.ste1la.lottery.domain.activity.service.partake;
 public interface IActivityPartake {
 
     /**
-     * TODO：待开发活动参与接口
+     * 参与活动
+     * @param req 入参
+     * @return    领取结果
      */
-    void doPartake();
+    PartakeResult doPartake(PartakeReq req);
 
 }
