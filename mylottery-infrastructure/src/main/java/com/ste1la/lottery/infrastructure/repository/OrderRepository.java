@@ -1,6 +1,6 @@
 package com.ste1la.lottery.infrastructure.repository;
 
-import com.ste1la.lottery.domain.award.repository.IAwardRepository;
+import com.ste1la.lottery.domain.award.repository.IOrderRepository;
 import org.springframework.stereotype.Component;
 
 /**
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @create: 2025-01-27 15:33
  **/
 @Component
-public class AwardRepository implements IAwardRepository {
+public class OrderRepository implements IOrderRepository {
 
 }
 
