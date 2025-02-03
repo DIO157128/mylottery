@@ -1,19 +1,25 @@
-package com.ste1la.lottery.domain.strategy.model.vo;
+package com.ste1la.lottery.rpc.dto;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * @program: mylottery
  * @description:
  * @author: ste1la
- * @create: 2025-01-27 14:09
+ * @create: 2025-02-03 14:59
  **/
-public class DrawAwardVO {
+public class AwardDTO implements Serializable {
 
     /**
      * 用户ID
      */
-    private String uId;
+    private String userId;
+
+    /**
+     * 活动ID
+     */
+    private Long activityId;
 
     /**
      * 奖品ID
@@ -49,27 +55,16 @@ public class DrawAwardVO {
      */
     private Date grantDate;
 
-    public DrawAwardVO() {
+    public AwardDTO(String userId) {
+        this.userId = userId;
     }
 
-    public DrawAwardVO(String uId, String awardId, Integer awardType, String awardName, String awardContent) {
-        this.uId = uId;
-        this.awardId = awardId;
-        this.awardType = awardType;
-        this.awardName = awardName;
-        this.awardContent = awardContent;
+    public Long getActivityId() {
+        return activityId;
     }
 
-    public String getuId() {
-        return uId;
-    }
-
-    public void setuId(String uId) {
-        this.uId = uId;
-    }
-
-    public DrawAwardVO(String uId) {
-        this.uId = uId;
+    public void setActivityId(Long activityId) {
+        this.activityId = activityId;
     }
 
     public String getAwardId() {
@@ -130,8 +125,10 @@ public class DrawAwardVO {
 
     @Override
     public String toString() {
-        return "DrawAwardVO{" +
-                "awardId='" + awardId + '\'' +
+        return "AwardDTO{" +
+                "userId='" + userId + '\'' +
+                ", activityId=" + activityId +
+                ", awardId='" + awardId + '\'' +
                 ", awardType=" + awardType +
                 ", awardName='" + awardName + '\'' +
                 ", awardContent='" + awardContent + '\'' +
@@ -140,6 +137,5 @@ public class DrawAwardVO {
                 ", grantDate=" + grantDate +
                 '}';
     }
+
 }
-
-
