@@ -11,6 +11,7 @@ import com.ste1la.lottery.infrastructure.po.UserStrategyExport;
 import com.ste1la.lottery.infrastructure.po.UserTakeActivity;
 import com.ste1la.lottery.infrastructure.po.UserTakeActivityCount;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -21,7 +22,7 @@ import java.util.Date;
  * @author: ste1la
  * @create: 2025-01-31 18:42
  **/
-@Component
+@Repository
 public class UserTakeActivityRepository implements IUserTakeActivityRepository {
 
     @Resource
