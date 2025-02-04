@@ -7,9 +7,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import process.IActivityProcess;
-import process.req.DrawProcessReq;
-import process.res.DrawProcessResult;
+import com.ste1la.lottery.application.process.IActivityProcess;
+import com.ste1la.lottery.application.process.req.DrawProcessReq;
+import com.ste1la.lottery.application.process.res.DrawProcessResult;
 
 import javax.annotation.Resource;
 

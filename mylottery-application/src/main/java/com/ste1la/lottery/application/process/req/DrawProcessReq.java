@@ -1,4 +1,4 @@
-package process.req;
+package com.ste1la.lottery.application.process.req;
 
 /**
  * @program: mylottery

@@ -1,9 +1,9 @@
-package process;
+package com.ste1la.lottery.application.process;
 
+import com.ste1la.lottery.application.process.req.DrawProcessReq;
+import com.ste1la.lottery.application.process.res.DrawProcessResult;
+import com.ste1la.lottery.application.process.res.RuleQuantificationCrowdResult;
 import com.ste1la.lottery.domain.rule.model.req.DecisionMatterReq;
-import process.req.DrawProcessReq;
-import process.res.DrawProcessResult;
-import process.res.RuleQuantificationCrowdResult;
 
 /**
  * @program: mylottery

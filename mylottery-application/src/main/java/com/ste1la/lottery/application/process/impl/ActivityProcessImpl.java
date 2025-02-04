@@ -1,4 +1,4 @@
-package process.impl;
+package com.ste1la.lottery.application.process.impl;
 
 import com.ste1la.lottery.common.Constants;
 import com.ste1la.lottery.domain.activity.model.req.PartakeReq;
@@ -14,10 +14,10 @@ import com.ste1la.lottery.domain.strategy.model.vo.DrawAwardVO;
 import com.ste1la.lottery.domain.strategy.service.draw.IDrawExec;
 import com.ste1la.lottery.domain.support.ids.IIdGenerator;
 import org.springframework.stereotype.Service;
-import process.IActivityProcess;
-import process.req.DrawProcessReq;
-import process.res.DrawProcessResult;
-import process.res.RuleQuantificationCrowdResult;
+import com.ste1la.lottery.application.process.IActivityProcess;
+import com.ste1la.lottery.application.process.req.DrawProcessReq;
+import com.ste1la.lottery.application.process.res.DrawProcessResult;
+import com.ste1la.lottery.application.process.res.RuleQuantificationCrowdResult;
 
 import javax.annotation.Resource;
 import java.util.Map;

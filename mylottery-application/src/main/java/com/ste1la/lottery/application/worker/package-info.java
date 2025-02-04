@@ -1,0 +1,1 @@
+package com.ste1la.lottery.application.worker;

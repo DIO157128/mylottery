@@ -13,10 +13,10 @@ import com.ste1la.lottery.rpc.res.DrawRes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
-import process.IActivityProcess;
-import process.req.DrawProcessReq;
-import process.res.DrawProcessResult;
-import process.res.RuleQuantificationCrowdResult;
+import com.ste1la.lottery.application.process.IActivityProcess;
+import com.ste1la.lottery.application.process.req.DrawProcessReq;
+import com.ste1la.lottery.application.process.res.DrawProcessResult;
+import com.ste1la.lottery.application.process.res.RuleQuantificationCrowdResult;
 
 import javax.annotation.Resource;
 

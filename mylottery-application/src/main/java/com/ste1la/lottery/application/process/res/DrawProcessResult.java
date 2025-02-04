@@ -1,4 +1,4 @@
-package process.res;
+package com.ste1la.lottery.application.process.res;
 
 import com.ste1la.lottery.common.Result;
 import com.ste1la.lottery.domain.strategy.model.vo.DrawAwardVO;
