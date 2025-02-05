@@ -98,6 +98,7 @@ public class UserTakeActivityRepository implements IUserTakeActivityRepository {
         userStrategyExport.setAwardName(drawOrder.getAwardName());
         userStrategyExport.setAwardContent(drawOrder.getAwardContent());
         userStrategyExport.setUuid(String.valueOf(drawOrder.getTakeId()));
+        userStrategyExport.setMqState(Constants.MQState.INIT.getCode());
 
         userStrategyExportDao.insert(userStrategyExport);
     }
@@ -124,5 +125,13 @@ public class UserTakeActivityRepository implements IUserTakeActivityRepository {
         return userTakeActivityVO;
     }
 
-}
+    @Override
+    public void updateInvoiceMqState(String uId, Long orderId, Integer mqState) {
+        UserStrategyExport userStrategyExport = new UserStrategyExport();
+        userStrategyExport.setuId(uId);
+        userStrategyExport.setOrderId(orderId);
+        userStrategyExport.setMqState(mqState);
+        userStrategyExportDao.updateInvoiceMqState(userStrategyExport);
+    }
 
+}

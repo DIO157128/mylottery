@@ -31,7 +31,7 @@ public class ActivityProcessTest {
     @Test
     public void test_doDrawProcess() {
         DrawProcessReq req = new DrawProcessReq();
-        req.setuId("fustack");
+        req.setuId("xiaofuge");
         req.setActivityId(100001L);
         DrawProcessResult drawProcessResult = activityProcess.doDrawProcess(req);
 
@@ -40,4 +40,5 @@ public class ActivityProcessTest {
     }
 
 }
+
 

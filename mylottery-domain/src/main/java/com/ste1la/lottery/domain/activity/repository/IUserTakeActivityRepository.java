@@ -59,10 +59,19 @@ public interface IUserTakeActivityRepository {
     /**
      * 查询是否存在未执行抽奖领取活动单【user_take_activity 存在 state = 0，领取了但抽奖过程失败的，可以直接返回领取结果继续抽奖】
      *
-     * @param activityId    活动ID
-     * @param uId           用户ID
-     * @return              领取单
+     * @param activityId 活动ID
+     * @param uId        用户ID
+     * @return 领取单
      */
     UserTakeActivityVO queryNoConsumedTakeActivityOrder(Long activityId, String uId);
+
+    /**
+     * 更新发货单MQ状态
+     *
+     * @param uId     用户ID
+     * @param orderId 订单ID
+     * @param mqState MQ 发送状态
+     */
+    void updateInvoiceMqState(String uId, Long orderId, Integer mqState);
 
 }
