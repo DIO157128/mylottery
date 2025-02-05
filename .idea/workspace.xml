@@ -7,38 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f515527-2ec2-4731-848c-639c3d81a22f" name="更改" comment="add rule">
-      <change afterPath="$PROJECT_DIR$/mylottery-application/src/main/java/process/res/RuleQuantificationCrowdResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/java/com/ste1la/lottery/interfaces/assembler/AwardMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/java/com/ste1la/lottery/interfaces/assembler/IMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/java/com/ste1la/lottery/interfaces/facade/LotteryActivityBooth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/interfaces/LotteryActivityBoothTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-rpc/src/main/java/com/ste1la/lottery/rpc/ILotteryActivityBooth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-rpc/src/main/java/com/ste1la/lottery/rpc/dto/AwardDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-rpc/src/main/java/com/ste1la/lottery/rpc/req/DrawReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-rpc/src/main/java/com/ste1la/lottery/rpc/req/QuantificationDrawReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-rpc/src/main/java/com/ste1la/lottery/rpc/res/DrawRes.java" afterDir="false" />
+    <list default="true" id="1f515527-2ec2-4731-848c-639c3d81a22f" name="更改" comment="fix inject problem: wrong package">
+      <change afterPath="$PROJECT_DIR$/mylottery-application/src/main/java/com/ste1la/lottery/application/mq/KafkaConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-application/src/main/java/com/ste1la/lottery/application/mq/KafkaProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/application/KafkaProducerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-application/src/main/java/process/IActivityProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-application/src/main/java/process/IActivityProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-application/src/main/java/process/impl/ActivityProcessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-application/src/main/java/process/impl/ActivityProcessImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-application/src/main/java/process/res/DrawProcessResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-application/src/main/java/process/res/DrawProcessResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-common/src/main/java/com/ste1la/lottery/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-common/src/main/java/com/ste1la/lottery/common/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/repository/IUserTakeActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/repository/IUserTakeActivityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/partake/impl/ActivityPartakeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/partake/impl/ActivityPartakeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/rule/model/req/DecisionMatterReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/rule/model/req/DecisionMatterReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/rule/service/engine/EngineBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/rule/service/engine/EngineBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/model/vo/DrawAwardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/model/vo/DrawAwardVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/service/draw/AbstractDrawBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/strategy/service/draw/AbstractDrawBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/repository/UserTakeActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/repository/UserTakeActivityRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-interfaces/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/main/java/com/ste1la/lottery/interfaces/ActivityBooth.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-rpc/src/main/java/com/ste1la/lottery/rpc/IActivityBooth.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-rpc/src/main/java/com/ste1la/lottery/rpc/dto/ActivityDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-rpc/src/main/java/com/ste1la/lottery/rpc/req/ActivityReq.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-rpc/src/main/java/com/ste1la/lottery/rpc/res/ActivityRes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +31,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="detached" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -76,6 +57,8 @@
     "JUnit.ActivityTest.executor": "Run",
     "JUnit.ApiTest.executor": "Run",
     "JUnit.DrawAlgorithmTest.executor": "Run",
+    "JUnit.KafkaProducerTest.executor": "Run",
+    "JUnit.KafkaProducerTest.test_send.executor": "Run",
     "JUnit.LotteryActivityBoothTest.executor": "Run",
     "JUnit.SpringRunnerTest.executor": "Run",
     "JUnit.SpringRunnerTest.test_award.executor": "Run",
@@ -97,6 +80,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.LotteryApplication.executor": "Run",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Desktop/java学习/project/lottery/mylottery/mylottery-interfaces/src/main/resources/mybatis/mapper",
@@ -108,7 +96,7 @@
     "project.structure.last.edited": "问题",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "settings.editor.selected.configurable": "sshConsole",
     "two.files.diff.last.used.folder": "D:/Desktop/java学习/project/lottery/Lottery",
     "vue.rearranger.settings.migration": "true",
     "数据库脚本.lottery.sql.executor": "Run",
@@ -151,7 +139,7 @@
       <recent name="com.ste1la.lottery.interfaces" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LotteryActivityBoothTest">
+  <component name="RunManager" selected="JUnit.KafkaProducerTest">
     <configuration name="lottery_01.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/doc/assets/sql/lottery_01.sql" />
       <script-mode>FILE</script-mode>
@@ -164,23 +152,33 @@
       <data-source id="104211f5-d920-4476-89d3-fec9f8d8a9b7" namespace="schema/&quot;lottery_02&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="lottery.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/doc/assets/sql/lottery.sql" />
-      <script-mode>FILE</script-mode>
-      <data-source id="104211f5-d920-4476-89d3-fec9f8d8a9b7" namespace="schema/&quot;lottery&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ActivityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KafkaProducerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mylottery-interfaces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ste1la.lottery.test.domain.*" />
+          <option name="PATTERN" value="com.ste1la.lottery.test.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ste1la.lottery.test.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.ste1la.lottery.test.domain.ActivityTest" />
+      <option name="PACKAGE_NAME" value="com.ste1la.lottery.test.application" />
+      <option name="MAIN_CLASS_NAME" value="com.ste1la.lottery.test.application.KafkaProducerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaProducerTest.test_send" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mylottery-interfaces" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ste1la.lottery.test.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ste1la.lottery.test.application" />
+      <option name="MAIN_CLASS_NAME" value="com.ste1la.lottery.test.application.KafkaProducerTest" />
+      <option name="METHOD_NAME" value="test_send" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -209,11 +207,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KafkaProducerTest" />
+        <item itemvalue="JUnit.KafkaProducerTest.test_send" />
         <item itemvalue="JUnit.LotteryActivityBoothTest" />
-        <item itemvalue="JUnit.ActivityTest" />
         <item itemvalue="数据库脚本.lottery_02.sql" />
         <item itemvalue="数据库脚本.lottery_01.sql" />
-        <item itemvalue="数据库脚本.lottery.sql" />
       </list>
     </recent_temporary>
   </component>
@@ -226,6 +224,11 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="SSH_CONFIG" />
+    <option name="myConnectionId" value="root@117.72.80.84:22 password" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="1f515527-2ec2-4731-848c-639c3d81a22f" name="更改" comment="" />
@@ -250,6 +253,7 @@
       <workItem from="1738449326369" duration="3084000" />
       <workItem from="1738612285794" duration="2402000" />
       <workItem from="1738615653394" duration="5863000" />
+      <workItem from="1738704428670" duration="9028000" />
     </task>
     <task id="LOCAL-00001" summary="fix database connection">
       <option name="closed" value="true" />
@@ -331,7 +335,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738622560360</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix inject problem: wrong package">
+      <option name="closed" value="true" />
+      <created>1738627974477</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738627974477</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix inject problem: wrong package">
+      <option name="closed" value="true" />
+      <created>1738628379567</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738628379567</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,6 +368,7 @@
     <MESSAGE value="add partake" />
     <MESSAGE value="add process" />
     <MESSAGE value="add rule" />
-    <option name="LAST_COMMIT_MESSAGE" value="add rule" />
+    <MESSAGE value="fix inject problem: wrong package" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix inject problem: wrong package" />
   </component>
 </project>
