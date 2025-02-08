@@ -1,4 +1,4 @@
-package com.ste1la.lottery.test.dao;
+package com.ste1la.lottery.test.infrastructure;
 
 
 import com.alibaba.fastjson.JSON;

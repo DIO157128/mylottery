@@ -1,4 +1,4 @@
-package com.ste1la.lottery.test.dao;
+package com.ste1la.lottery.test.infrastructure;
 
 import com.ste1la.lottery.infrastructure.dao.IUserTakeActivityDao;
 import com.ste1la.lottery.infrastructure.po.UserTakeActivity;

@@ -7,26 +7,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f515527-2ec2-4731-848c-639c3d81a22f" name="更改" comment="add mq for invoice">
-      <change afterPath="$PROJECT_DIR$/mylottery-application/src/main/java/com/ste1la/lottery/application/worker/LotteryXxlJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylottery-application/src/main/java/com/ste1la/lottery/application/worker/LotteryXxlJobConfig.java" afterDir="false" />
+    <list default="true" id="1f515527-2ec2-4731-848c-639c3d81a22f" name="更改" comment="add xxl">
+      <change afterPath="$PROJECT_DIR$/doc/docker-compose-xxl.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/sql/tables_xxl_job.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-application/src/main/java/com/ste1la/lottery/application/mq/consumer/LotteryActivityPartakeRecordListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/res/StockResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/vo/ActivityPartakeRecordVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/support/redis/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/util/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/infrastructure/RedisUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/vo/ActivityVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/vo/ActivityVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-application/src/main/java/com/ste1la/lottery/application/mq/producer/KafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-application/src/main/java/com/ste1la/lottery/application/mq/producer/KafkaProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-application/src/main/java/com/ste1la/lottery/application/process/impl/ActivityProcessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-application/src/main/java/com/ste1la/lottery/application/process/impl/ActivityProcessImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-common/src/main/java/com/ste1la/lottery/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-common/src/main/java/com/ste1la/lottery/common/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/res/PartakeResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/res/PartakeResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/vo/ActivityBillVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/model/vo/ActivityBillVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/repository/IActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/repository/IActivityRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/repository/IUserTakeActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/repository/IUserTakeActivityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/deploy/IActivityDeploy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/deploy/IActivityDeploy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/deploy/impl/ActivityDeployImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/deploy/impl/ActivityDeployImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/partake/BaseActivityPartake.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/partake/BaseActivityPartake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/partake/IActivityPartake.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/partake/IActivityPartake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/partake/impl/ActivityPartakeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-domain/src/main/java/com/ste1la/lottery/domain/activity/service/partake/impl/ActivityPartakeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/dao/IActivityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/dao/IActivityDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/dao/IUserStrategyExportDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/dao/IUserStrategyExportDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/repository/ActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/repository/ActivityRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/repository/UserTakeActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-infrastructure/src/main/java/com/ste1la/lottery/infrastructure/repository/UserTakeActivityRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/mybatis/mapper/Activity_Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/mybatis/mapper/Activity_Mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/mybatis/mapper/UserStrategyExport_Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/main/resources/mybatis/mapper/UserStrategyExport_Mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/dao/ActivityDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/infrastructure/ActivityDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/dao/UserStrategyExportDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/infrastructure/UserStrategyExportDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/dao/UserTakeActivityDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mylottery-interfaces/src/test/java/com/ste1la/lottery/test/infrastructure/UserTakeActivityDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +77,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Docker.doc.xxl-job-admin: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.doc/docker-compose-xxl.yml.xxl-job-admin: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.doc/docker-compose-xxl.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.doc: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.doc: Compose 部署.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.ActivityDaoTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.ActivityProcessTest.executor&quot;: &quot;Run&quot;,
@@ -74,6 +90,7 @@
     &quot;JUnit.KafkaProducerTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.KafkaProducerTest.test_send.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.LotteryActivityBoothTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisUtilTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.SpringRunnerTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.SpringRunnerTest.test_award.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.SpringRunnerTest.test_drawExec.executor&quot;: &quot;Debug&quot;,
@@ -101,7 +118,7 @@
     &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/java学习/project/lottery/mylottery/mylottery-interfaces/src/main/resources/mybatis/mapper&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/java学习/project/lottery/mylottery/doc/sql&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -119,7 +136,8 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+      &quot;mysql&quot;,
+      &quot;redis&quot;
     ],
     &quot;RunConfigurationTargetLRU&quot;: [
       &quot;104211f5-d920-4476-89d3-fec9f8d8a9b7/schema/\&quot;lottery\&quot;&quot;,
@@ -131,18 +149,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\java学习\project\lottery\mylottery\doc\sql" />
       <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-interfaces\src\main\resources\mybatis\mapper" />
       <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-domain\src\main\java\com\ste1la\lottery\domain\rule" />
       <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-interfaces\src\test\java\com\ste1la\lottery\test\dao" />
       <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-domain\src\main\java\com\ste1la\lottery\domain\activity" />
-      <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-domain\src\main\java\com\ste1la\lottery\domain\award\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-domain\src\main\java\com\ste1la\lottery\domain\support" />
       <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-domain\src\main\java\com\ste1la\lottery\domain\award\service\" />
       <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-domain\src\main\java\com\ste1la\lottery\domain\award" />
       <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-domain\src\main\java\com\ste1la\lottery\domain\" />
       <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-domain\src\main\java\com\ste1la\lottery\domain\strategy\service\" />
-      <recent name="D:\Desktop\java学习\project\lottery\mylottery\mylottery-domain\src\main\java\com\ste1la\lottery\domain\strategy\model\" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.ste1la.lottery" />
@@ -154,58 +172,16 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.LotteryApplication">
-    <configuration name="lottery_01.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/doc/assets/sql/lottery_01.sql" />
-      <script-mode>FILE</script-mode>
-      <data-source id="104211f5-d920-4476-89d3-fec9f8d8a9b7" namespace="schema/&quot;lottery_01&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lottery_02.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/doc/assets/sql/lottery_02.sql" />
-      <script-mode>FILE</script-mode>
-      <data-source id="104211f5-d920-4476-89d3-fec9f8d8a9b7" namespace="schema/&quot;lottery_02&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ActivityProcessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mylottery-interfaces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ste1la.lottery.test.application.*" />
+          <option name="PATTERN" value="com.ste1la.lottery.test.infrastructure.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ste1la.lottery.test.application" />
-      <option name="MAIN_CLASS_NAME" value="com.ste1la.lottery.test.application.ActivityProcessTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KafkaProducerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mylottery-interfaces" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ste1la.lottery.test.application.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ste1la.lottery.test.application" />
-      <option name="MAIN_CLASS_NAME" value="com.ste1la.lottery.test.application.KafkaProducerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringRunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mylottery-interfaces" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ste1la.lottery.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ste1la.lottery.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ste1la.lottery.test.SpringRunnerTest" />
+      <option name="PACKAGE_NAME" value="com.ste1la.lottery.test.infrastructure" />
+      <option name="MAIN_CLASS_NAME" value="com.ste1la.lottery.test.infrastructure.RedisUtilTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -218,13 +194,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="doc: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="doc/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="doc/docker-compose-xxl.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="doc/docker-compose-xxl.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="doc/docker-compose-xxl.yml.xxl-job-admin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="xxl-job-admin" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="doc/docker-compose-xxl.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="doc.xxl-job-admin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="xxl-job-admin" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="doc/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringRunnerTest" />
-        <item itemvalue="JUnit.KafkaProducerTest" />
-        <item itemvalue="JUnit.ActivityProcessTest" />
-        <item itemvalue="数据库脚本.lottery_02.sql" />
-        <item itemvalue="数据库脚本.lottery_01.sql" />
+        <item itemvalue="Docker.doc/docker-compose-xxl.yml: Compose Deployment" />
+        <item itemvalue="Docker.doc/docker-compose-xxl.yml.xxl-job-admin: Compose Deployment" />
+        <item itemvalue="Docker.doc: Compose Deployment" />
+        <item itemvalue="JUnit.RedisUtilTest" />
+        <item itemvalue="Docker.doc.xxl-job-admin: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +293,10 @@
       <workItem from="1738704428670" duration="12567000" />
       <workItem from="1738791274138" duration="1951000" />
       <workItem from="1738793234655" duration="1999000" />
-      <workItem from="1738796579288" duration="2524000" />
+      <workItem from="1738796579288" duration="11901000" />
+      <workItem from="1738884938615" duration="4648000" />
+      <workItem from="1738953010975" duration="3863000" />
+      <workItem from="1739047363349" duration="618000" />
     </task>
     <task id="LOCAL-00001" summary="fix database connection">
       <option name="closed" value="true" />
@@ -383,11 +410,30 @@
       <option name="project" value="LOCAL" />
       <updated>1738793365464</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add xxl">
+      <option name="closed" value="true" />
+      <created>1738800013957</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738800013957</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix database connection" />
@@ -403,6 +449,7 @@
     <MESSAGE value="fix inject problem: wrong package" />
     <MESSAGE value="add kafka demo" />
     <MESSAGE value="add mq for invoice" />
-    <option name="LAST_COMMIT_MESSAGE" value="add mq for invoice" />
+    <MESSAGE value="add xxl" />
+    <option name="LAST_COMMIT_MESSAGE" value="add xxl" />
   </component>
 </project>

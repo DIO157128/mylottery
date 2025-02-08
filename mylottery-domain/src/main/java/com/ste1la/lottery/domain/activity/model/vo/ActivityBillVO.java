@@ -21,6 +21,8 @@ public class ActivityBillVO {
     private Date beginDateTime;
     /** activity 结束时间 */
     private Date endDateTime;
+    /** 库存 */
+    private Integer stockCount;
     /** activity 库存剩余 */
     private Integer stockSurplusCount;
     /**
@@ -76,6 +78,14 @@ public class ActivityBillVO {
         this.endDateTime = endDateTime;
     }
 
+    public Integer getStockCount() {
+        return stockCount;
+    }
+
+    public void setStockCount(Integer stockCount) {
+        this.stockCount = stockCount;
+    }
+
     public Integer getStockSurplusCount() {
         return stockSurplusCount;
     }
@@ -124,6 +134,7 @@ public class ActivityBillVO {
                 ", activityName='" + activityName + '\'' +
                 ", beginDateTime=" + beginDateTime +
                 ", endDateTime=" + endDateTime +
+                ", stockCount=" + stockCount +
                 ", stockSurplusCount=" + stockSurplusCount +
                 ", state=" + state +
                 ", strategyId=" + strategyId +
@@ -133,5 +144,3 @@ public class ActivityBillVO {
     }
 
 }
-
-
